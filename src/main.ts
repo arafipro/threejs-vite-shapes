@@ -17,34 +17,9 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-const boxWidth = 1.5;
-const boxHeight = 1.5;
-const boxDepth = 1.5;
-const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
-const material = new THREE.MeshPhongMaterial({ color: 0x44aa88 });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-const edge = new THREE.EdgesGeometry(geometry);
-const lines = new THREE.LineBasicMaterial({ color: 0xffffff });
-const line = new THREE.LineSegments(edge, lines);
-scene.add(line);
-
 const lightColor = 0xffffff;
 const intensity = 5;
 const light = new THREE.DirectionalLight(lightColor, intensity);
 light.position.set(-1, 2, 4);
 scene.add(light);
 
-function animate() {
-  requestAnimationFrame(animate);
-
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  line.rotation.x += 0.01;
-  line.rotation.y += 0.01;
-
-  renderer.render(scene, camera);
-}
-
-animate();
