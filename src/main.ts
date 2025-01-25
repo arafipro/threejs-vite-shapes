@@ -32,21 +32,34 @@ const geometries = [
 ];
 
 const basicMaterial = new THREE.MeshBasicMaterial({ color: 0x44aa88 });
+const normalMaterial = new THREE.MeshNormalMaterial();
+const phongMaterial = new THREE.MeshPhongMaterial({ color: 0x44aa88 });
 
 geometries.forEach((geo, i) => {
   const meshBasic = new THREE.Mesh(geo, basicMaterial);
-  meshBasic.position.x = (i - 2) * 2.2;
-	scene.add(meshBasic);
-	
-	function animate() {
-		requestAnimationFrame(animate)
-		
-		meshBasic.rotation.x += 0.01
-		meshBasic.rotation.y += 0.01
-		
-		renderer.render(scene, camera);
-	}
-	
-	animate();
-});
+  const meshNormal = new THREE.Mesh(geo, normalMaterial);
+  const meshPhong = new THREE.Mesh(geo, phongMaterial);
 
+  meshBasic.position.set((i - 2) * 2.2, 2, 0);
+  meshNormal.position.set((i - 2) * 2.2, 0, 0);
+  meshPhong.position.set((i - 2) * 2.2, -2, 0);
+
+  scene.add(meshBasic);
+  scene.add(meshNormal);
+  scene.add(meshPhong);
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    meshBasic.rotation.x += 0.01;
+    meshBasic.rotation.y += 0.01;
+    meshNormal.rotation.x += 0.01;
+    meshNormal.rotation.y += 0.01;
+    meshPhong.rotation.x += 0.01;
+    meshPhong.rotation.y += 0.01;
+
+    renderer.render(scene, camera);
+  }
+
+  animate();
+});
