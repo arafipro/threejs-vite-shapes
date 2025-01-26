@@ -2,7 +2,7 @@
 
 ## YouTube
 
-[!["10分で理解できる！Three.js入門：ジオメトリとマテリアルを解説　3DCGいっぱい"](https://i.ytimg.com/vi/[]/maxresdefault.jpg)](https://youtu.be/[])
+[!["10分で理解できる！Three.js入門：ジオメトリとマテリアルを解説　3DCGいっぱい"](https://i.ytimg.com/vi/0mfWGFS6Osk/maxresdefault.jpg)](https://youtu.be/0mfWGFS6Osk)
 
 ## 技術選定
 
