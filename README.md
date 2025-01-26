@@ -1,8 +1,8 @@
-# 2025年最新！Three.js入門：3DCGの基礎を完全解説
+# 10分で理解できる！Three.js入門：ジオメトリとマテリアルを解説　3DCGいっぱい
 
 ## YouTube
 
-[!["2025年最新！Three.js入門：3DCGの基礎を完全解説"](https://i.ytimg.com/vi/uToP-ej6kXc/maxresdefault.jpg)](https://youtu.be/uToP-ej6kXc)
+[!["10分で理解できる！Three.js入門：ジオメトリとマテリアルを解説　3DCGいっぱい"](https://i.ytimg.com/vi/[]/maxresdefault.jpg)](https://youtu.be/[])
 
 ## 技術選定
 
